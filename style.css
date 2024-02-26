@@ -1,0 +1,53 @@
+:root{
+    --body-bg: #e6464c;
+    --btn-hover-color : #921317;
+    --output-border: #ccc;
+    --output-bg: #f9f9f9;
+}
+
+body{
+    margin: 0;
+    background-color: var(--body-bg);
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+button{
+    color: white;
+    background-color: var(--body-bg);
+    border: none;
+    border-radius: 7px;
+    padding: 7px 14px;
+    font-size: 15px;
+    margin: 0 2px 10px 2px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--btn-hover-color);
+}
+
+.output{
+    min-height: 200px;
+    border: 1px solid var(--output-border);
+    border-radius: 10px;
+    text-align: start;
+    padding: 15px;
+    background-color: var(--output-bg);
+    margin-top: 7px;
+}
+
+@media screen and (min-width: 850px) {
+    .container{
+        width: 50%;
+    }
+}
